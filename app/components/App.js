@@ -1,10 +1,14 @@
 import React from 'react'
-import Home from '../containers/Home'
+import Counter from '../containers/CounterData'
+import Name from '../containers/NameData'
+
+import { Router, Route, browserHistory } from 'react-router'
 
 let App = () => (
-  <div>
-    <Home />
-  </div>
+  <Router history={browserHistory}>
+    <Route path='/' component={Counter}/>
+    <Route path='/name' component={Name}/>
+  </Router>
 )
 
 export default App

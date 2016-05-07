@@ -1,8 +1,9 @@
-import React, { Component, PropTypes } from 'react'
+import React, { PropTypes } from 'react'
+import { Link } from 'react-router'
 
 let Counter = ({ counter, onIncrement, onDecrement }) => (
   <div>
-    <h1>Welcome</h1>
+    <Link to='/'>Counter</Link> | <Link to='/name'>Name</Link>
     <p>Counter: {counter}</p>
     <button onClick={() => onIncrement(2)}>++</button>
     <button onClick={() => onIncrement(1)}>+</button>

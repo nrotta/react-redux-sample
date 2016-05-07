@@ -20,9 +20,9 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const Home = connect(
+const CounterData = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Counter)
 
-export default Home
+export default CounterData
