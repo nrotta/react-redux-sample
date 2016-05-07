@@ -10,6 +10,6 @@ const mapStateToProps = (state) => {
 
 const ProfilePage = connect(
   mapStateToProps
-)(ProfilePage)
+)(Profile)
 
 export default ProfilePage
