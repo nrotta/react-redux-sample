@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 let Counter = ({ counter, onIncrement, onDecrement }) => (
   <div>
-    <Link to='/'>Counter</Link> | <Link to='/name'>Name</Link>
+    <Link to='/'>Counter</Link> | <Link to='/profile'>Profile</Link>
     <p>Counter: {counter}</p>
     <button onClick={() => onIncrement(2)}>++</button>
     <button onClick={() => onIncrement(1)}>+</button>

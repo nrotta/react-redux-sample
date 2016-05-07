@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Name from '../components/Name'
+import Profile from '../components/Profile'
 
 const mapStateToProps = (state) => {
   return {
@@ -8,8 +8,8 @@ const mapStateToProps = (state) => {
   }
 }
 
-const Home = connect(
+const ProfilePage = connect(
   mapStateToProps
-)(Name)
+)(ProfilePage)
 
-export default Home
+export default ProfilePage
