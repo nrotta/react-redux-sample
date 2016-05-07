@@ -4,8 +4,9 @@
   "description": "Sample app using React and redux",
   "main": "app.js",
   "scripts": {
-    "build": "webpack --progress --color",
+    "build": "webpack -p --progress --color",
     "start": "node app.js",
+    "dev": "webpack --progress --color --watch & npm start",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-register ./app/test"
   },
   "author": "Nicolas Rotta",
